@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Resimler-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ImagesViewController" id="Y6W-OH-hqX" customClass="ImagesViewController" customModule="ThirdHomeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gmj-K0-FiU">
+                                <rect key="frame" x="0.0" y="76" width="414" height="737"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oxk-uh-1ZX">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rKa-7U-2hy">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6rm-SY-MxR">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resimler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFo-Ca-zdI">
+                                <rect key="frame" x="16" y="44" width="398" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gmj-K0-FiU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="4gh-I8-jBA"/>
+                            <constraint firstItem="ZFo-Ca-zdI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="G4a-rA-cUG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gmj-K0-FiU" secondAttribute="bottom" id="Jyu-UC-UuB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZFo-Ca-zdI" secondAttribute="trailing" id="P4R-w4-I3i"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gmj-K0-FiU" secondAttribute="trailing" id="na5-iM-BBg"/>
+                            <constraint firstItem="gmj-K0-FiU" firstAttribute="top" secondItem="ZFo-Ca-zdI" secondAttribute="bottom" constant="8" id="qzU-od-O0b"/>
+                            <constraint firstItem="ZFo-Ca-zdI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="t6A-2J-gNz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Resimler" image="person.crop.rectangle.fill" catalog="system" id="m14-ac-6ZV"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imagesCollectionView" destination="gmj-K0-FiU" id="hUK-e9-dd2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.crop.rectangle.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
