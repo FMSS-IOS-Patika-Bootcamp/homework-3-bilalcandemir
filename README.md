@@ -1,4 +1,11 @@
 # HomWork-3
+
+Ödevi inceleyecek arkadaşlar için Read Me bölümüne ekleme yapıyorum umarım yapamadığı yer olan arkadaşlara yardımcı olur ve diğer inceleyen arkadaşlarda eksiklerimi bana iletirler.
+
+MVVM mimarisini elimden geldiğince entegre etmeye çalıştım ve View Controller sayfasını olabildiğince dummy tuttum. Table View Controller için helper class yazdım ve bu classı iki farklı ekranda table view kullandığımız için generic hale getirdim. Collection View'ı sadece bir yerde kullandığımız için helper class yazdım ancak generic yapmadım. Network katmanı için sadece GET işlemi yapabilen ancak generic bir yapı kurmaya çalıştım yani hocanın derste yaptığının üstüne birşeyler koymak istedim. Takıldığı herhangi bir yerin önünü açabilecek bişeyler yapabildiysem ne mutlu bana. Herkese başarılar dilerim. 
+
+
+
 3. Ödevimiz
 
 
